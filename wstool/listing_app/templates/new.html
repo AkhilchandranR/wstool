@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+  <h2 style="text-align: center;">{{search|title}}</h2>
+  {% for post in all_postings %}
+      <p> <strong>{{post.0}}</strong></p>
+      <p>{{post.2}}</p>
+       <p><a href="{{post.1}}">view details>></a></p>
+       <hr>
+       
+      {% endfor %}
+{% endblock content %}

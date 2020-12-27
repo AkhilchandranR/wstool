@@ -1,0 +1,1 @@
+web: gunicorn wstool.wsgi --log-file -
